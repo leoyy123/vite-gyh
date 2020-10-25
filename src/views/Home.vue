@@ -5,8 +5,8 @@
       <h1>小郭ui</h1>
       <h2>一个蛇皮的ui框架</h2>
       <p class="actions">
-        <a href="">GitHub</a>
-        <a href="">开始</a>
+        <a href="https://github.com/leoyy123/vite-gyh">GitHub</a>
+        <router-link to="/doc">开始</router-link>
       </p>
     </div>
   </div>
@@ -23,7 +23,7 @@ export default {
   .banner{
     width: 100%;
     padding: 50px 0;
-    background: green;
+    background: lightgreen;
     .actions{
       margin-top: 20px;
       a{
