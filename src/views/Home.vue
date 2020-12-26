@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Topnav></Topnav>
     <div class="banner">
       <h1>小郭ui</h1>
@@ -24,6 +24,7 @@ export default {
     width: 100%;
     padding: 50px 0;
     background: lightgreen;
+    height: 100%;
     .actions{
       margin-top: 20px;
       a{
@@ -34,5 +35,8 @@ export default {
     }
     }
     
+  }
+  .home{
+    height: 100%;
   }
 </style>

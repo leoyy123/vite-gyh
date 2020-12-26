@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="doc">
     <Topnav></Topnav>
     <div class="content">
       <aside v-if="asideVisible">
@@ -19,7 +19,9 @@
           </li>
         </ol>
       </aside>
-      <main>主内容</main>
+      <main class="doc_container">
+        <router-view></router-view>
+      </main>
     </div>
   </div>
 </template>
@@ -44,6 +46,19 @@ export default {
     width: 160px;
     text-align: left;
     padding-left: 20px;
+  }
+  .content{
+    display: flex;
+    justify-content: flex-start;
+    height: 85%;
+
+  }
+  .doc_container{
+    margin-left: 10px;
+    background: yellowgreen;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
   }
   @media (max-width:500px){
     aside{
